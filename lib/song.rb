@@ -20,11 +20,12 @@ end
   end
    
    
-  # def self.create
-  #   self.class.all << @name
-  # end 
+  def self.create
+    self.class.all << @name
+  end 
    
-   def 
+   def self.create(name)
+     song = song.new
  
  def new_by_name(name)
    @@all.find {|person| person.name == name}
