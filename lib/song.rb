@@ -51,6 +51,13 @@ class Song
       self.find_by_name(name) || self.create_by_name(name)
       #the above statement is saying do this(if it is true) or that (if the first thing is not true and the second thing is true)
   end
+  
+  
+  def self.alphabetical()
+    #returns all the songs instances in ascending (a-z) alphabetical order.
+    @@all.sort_by{|x| x.name}
+  end
+  
 
 def self.destroy_all
   @@all = []
